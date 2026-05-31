@@ -27,51 +27,57 @@ const productsData = {
   },
   "tincture-of-saffron": {
     title: "Tincture of Saffron",
-    subtitle: "Concentrated Golden Wellness",
-    img: "/images/saffron-tincture.png",
+    subtitle: "Concentrated Golden Wellness — 30ml",
+    img: "/product-tincture-bottle.jpg",
     price: "₹1,499",
     size: "30ml",
-    desc: "A highly concentrated liquid extract of our finest indoor-grown saffron. Perfect for adding a powerful dose of wellness to your daily routine with just a few drops.",
+    desc: "A highly concentrated liquid extract of our finest indoor-grown saffron. Presented in a signature orange gift box with a premium dropper bottle — perfect for adding a powerful dose of wellness to your daily routine with just a few drops.",
     benefits: [
-      "Supports emotional well-being",
-      "May help reduce PMS symptoms",
+      "Supports emotional well-being and mood",
+      "May help reduce PMS symptoms naturally",
       "Potent anti-inflammatory properties",
-      "Enhances memory and cognitive function"
+      "Enhances memory and cognitive function",
+      "Promotes glowing, radiant skin",
+      "Powerful antioxidant protection"
     ],
     ingredients: "Pure Saffron Extract (Crocus sativus), Food-grade Glycerin, Purified Water.",
-    usage: "Add 5-10 drops to water, tea, or milk once or twice daily."
+    usage: "Add 5-10 drops to water, tea, or warm milk once or twice daily. Shake gently before use."
   },
   "kesar-honey": {
     title: "Kesar + Honey",
-    subtitle: "Nature's Perfect Synergy",
-    img: "/images/kesar-honey.png",
+    subtitle: "With Goodness of Pure Kesar & Natural Honey",
+    img: "/product-kesar-honey.jpg",
     price: "₹1,299",
-    size: "250g",
-    desc: "Raw, unpasteurized wild forest honey infused with premium saffron threads. A delicious and powerful natural immunity booster.",
+    size: "30g",
+    desc: "Raw, natural honey infused with premium indoor-farmed saffron threads. Presented in an elegant glass jar in a signature white and gold gift box — a golden synergy of taste, immunity, and purity. Net Weight 30g.",
     benefits: [
       "Excellent natural immunity booster",
       "Soothes sore throats and coughs",
       "Rich source of vitamins and minerals",
-      "Provides sustained natural energy"
+      "Provides sustained natural energy",
+      "Anti-bacterial and anti-inflammatory",
+      "Natural skin brightening properties"
     ],
-    ingredients: "Raw Unpasteurized Honey, Pure Indoor-Farmed Saffron Threads.",
-    usage: "Take one teaspoon daily, either directly or dissolved in warm water/milk."
+    ingredients: "Pure Natural Honey, Indoor-Farmed Saffron Threads (Crocus sativus).",
+    usage: "Take one teaspoon daily, either directly or dissolved in warm (not hot) water or milk. Best on an empty stomach."
   },
   "nector-5": {
     title: "Nector-5",
-    subtitle: "Holistic Daily Wellness Blend",
-    img: "/images/nector-5.png",
+    subtitle: "A Mix Herb Liquid Extract — 10ml",
+    img: "/product-nector5.jpg",
     price: "₹1,999",
-    size: "60 Capsules",
-    desc: "A proprietary wellness supplement blending saffron with four other powerful natural adaptogens. Formulated to support overall vitality, immunity, and balance.",
+    size: "10ml",
+    desc: "A powerful proprietary Mix Herb Liquid Extract — a blend of five potent natural adaptogens and botanicals. Presented in a premium 10ml dropper bottle with a signature handcrafted jute gift bag. Formulated to support holistic vitality, stamina, immunity, and mental performance.",
     benefits: [
-      "Comprehensive daily wellness support",
-      "Balances stress and cortisol levels",
-      "Promotes restful sleep",
-      "Supports joint and muscle health"
+      "Libido booster and vitality enhancer",
+      "Strengthens immunity naturally",
+      "Manages stress and anxiety effectively",
+      "Reduces stress-related inflammation",
+      "Releases stamina and endurance",
+      "Supports stamina and faster recovery"
     ],
-    ingredients: "Saffron Extract, Ashwagandha, Curcumin, Shilajit, Black Pepper Extract.",
-    usage: "Take 1-2 capsules daily with meals or as directed by your healthcare professional."
+    ingredients: "Proprietary blend of 5 mixed herbal extracts including adaptogenic botanicals. 100% natural, vegan-friendly.",
+    usage: "Take 5-10 drops directly or in warm water once or twice daily, preferably with meals. Consult your healthcare provider before use."
   }
 };
 

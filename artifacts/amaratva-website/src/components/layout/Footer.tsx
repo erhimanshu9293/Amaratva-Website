@@ -96,11 +96,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-white/10 text-center font-sans text-sm text-accent-foreground/60 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>© 2024 Amaratva Agro Pvt. Ltd. All rights reserved.</p>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+        <div className="pt-8 border-t border-white/10 font-sans text-sm text-accent-foreground/60 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p>© 2025 Amaratva Agro Pvt. Ltd. All rights reserved.</p>
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
+            <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
+            <Link href="/shipping-policy" className="hover:text-primary transition-colors">Shipping Policy</Link>
+            <Link href="/refund-policy" className="hover:text-primary transition-colors">Refund Policy</Link>
           </div>
         </div>
       </div>

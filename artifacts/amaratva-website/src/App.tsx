@@ -12,6 +12,10 @@ import IndoorFarming from "@/pages/indoor-farming";
 import Gallery from "@/pages/gallery";
 import Blog from "@/pages/blog";
 import Contact from "@/pages/contact";
+import PrivacyPolicy from "@/pages/privacy-policy";
+import Terms from "@/pages/terms";
+import ShippingPolicy from "@/pages/shipping-policy";
+import RefundPolicy from "@/pages/refund-policy";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -33,6 +37,10 @@ function Router() {
           <Route path="/gallery" component={Gallery} />
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/terms-of-service" component={Terms} />
+          <Route path="/shipping-policy" component={ShippingPolicy} />
+          <Route path="/refund-policy" component={RefundPolicy} />
           <Route component={NotFound} />
         </Switch>
       </main>

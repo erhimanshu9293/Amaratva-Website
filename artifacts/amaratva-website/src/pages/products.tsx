@@ -16,29 +16,29 @@ const products = [
     id: "tincture-of-saffron", 
     title: "Tincture of Saffron", 
     category: "Wellness Products", 
-    img: "/images/saffron-tincture.png", 
-    desc: "Highly concentrated saffron extract for maximum health benefits in a convenient liquid form." 
+    img: "/product-tincture-bottle.jpg", 
+    desc: "Highly concentrated saffron liquid extract — 30ml of maximum wellness in every drop. Comes in a signature orange gift box." 
   },
   { 
     id: "kesar-honey", 
     title: "Kesar + Honey", 
     category: "Wellness Products", 
-    img: "/images/kesar-honey.png", 
-    desc: "Raw, organic honey infused with our finest saffron threads. A golden synergy of taste and immunity." 
+    img: "/product-kesar-honey.jpg", 
+    desc: "Raw, natural honey infused with pure saffron threads. With goodness of Pure Kesar & Natural Honey — 30g of golden synergy." 
   },
   { 
     id: "nector-5", 
     title: "Nector-5", 
     category: "Wellness Products", 
-    img: "/images/nector-5.png", 
-    desc: "A proprietary blend of 5 powerful natural ingredients formulated for holistic daily wellness." 
+    img: "/product-nector5.jpg", 
+    desc: "A Mix Herb Liquid Extract — a proprietary blend of powerful natural adaptogens in an elegant 10ml dropper with handcrafted jute bag packaging." 
   },
   { 
     id: "indoor-setup", 
     title: "Indoor Farming Solutions", 
     category: "Indoor Farming", 
     img: "/images/indoor-lab.png", 
-    desc: "Complete consultation and setup services for entrepreneurs looking to start aeroponic farming." 
+    desc: "Complete consultation and setup services for entrepreneurs looking to start aeroponic saffron farming." 
   }
 ];
 
