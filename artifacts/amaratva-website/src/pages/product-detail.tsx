@@ -12,10 +12,10 @@ const productsData = {
   "saffron-water": {
     title: "Saffron Water",
     subtitle: "Pure Hydration with Golden Essence",
-    img: "/images/saffron-water.png",
+    images: ["/images/saffron-water.png"],
     price: "₹899",
     size: "500ml",
-    desc: "Experience the delicate aroma and health benefits of pure Kashmiri saffron infused in pristine mineral water. Refreshing, hydrating, and naturally rich in antioxidants.",
+    desc: "Experience the delicate aroma and health benefits of pure indoor-farmed saffron infused in pristine mineral water. Refreshing, hydrating, and naturally rich in antioxidants.",
     benefits: [
       "Naturally rich in antioxidants",
       "Promotes glowing, healthy skin",
@@ -27,11 +27,11 @@ const productsData = {
   },
   "tincture-of-saffron": {
     title: "Tincture of Saffron",
-    subtitle: "Concentrated Golden Wellness — 30ml",
-    img: "/product-tincture-bottle.jpg",
+    subtitle: "Concentrated Golden Wellness — Net Volume 30ml",
+    images: ["/product-tincture-bottle.jpg", "/product-tincture-box.jpg"],
     price: "₹1,499",
     size: "30ml",
-    desc: "A highly concentrated liquid extract of our finest indoor-grown saffron. Presented in a signature orange gift box with a premium dropper bottle — perfect for adding a powerful dose of wellness to your daily routine with just a few drops.",
+    desc: "A highly concentrated liquid extract of our finest indoor-grown saffron. Presented in a signature orange gift box with a premium gold-capped dropper bottle — perfect for adding a powerful dose of wellness to your daily routine with just a few drops.",
     benefits: [
       "Supports emotional well-being and mood",
       "May help reduce PMS symptoms naturally",
@@ -45,11 +45,11 @@ const productsData = {
   },
   "kesar-honey": {
     title: "Kesar + Honey",
-    subtitle: "With Goodness of Pure Kesar & Natural Honey",
-    img: "/product-kesar-honey.jpg",
+    subtitle: "With Goodness of Pure Kesar & Natural Honey — Net Weight 30g",
+    images: ["/product-kesar-honey.jpg"],
     price: "₹1,299",
     size: "30g",
-    desc: "Raw, natural honey infused with premium indoor-farmed saffron threads. Presented in an elegant glass jar in a signature white and gold gift box — a golden synergy of taste, immunity, and purity. Net Weight 30g.",
+    desc: "Raw, natural honey infused with premium indoor-farmed saffron threads. Presented in an elegant glass jar in a signature white and gold gift box — a golden synergy of taste, immunity, and purity.",
     benefits: [
       "Excellent natural immunity booster",
       "Soothes sore throats and coughs",
@@ -64,7 +64,7 @@ const productsData = {
   "nector-5": {
     title: "Nector-5",
     subtitle: "A Mix Herb Liquid Extract — 10ml",
-    img: "/product-nector5.jpg",
+    images: ["/product-nector5.jpg"],
     price: "₹1,999",
     size: "10ml",
     desc: "A powerful proprietary Mix Herb Liquid Extract — a blend of five potent natural adaptogens and botanicals. Presented in a premium 10ml dropper bottle with a signature handcrafted jute gift bag. Formulated to support holistic vitality, stamina, immunity, and mental performance.",
@@ -84,6 +84,7 @@ const productsData = {
 export default function ProductDetail() {
   const { slug } = useParams<{ slug: string }>();
   const product = productsData[slug as keyof typeof productsData];
+  const [activeImg, setActiveImg] = useState(0);
 
   if (!product) {
     return (
@@ -124,9 +125,36 @@ export default function ProductDetail() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-card rounded-2xl p-8 lg:p-12 flex items-center justify-center border border-border"
+            className="flex flex-col gap-4"
           >
-            <img src={product.img} alt={product.title} className="max-w-full h-auto object-contain max-h-[500px] drop-shadow-2xl" />
+            {/* Main Image */}
+            <div className="bg-card rounded-2xl p-6 lg:p-10 flex items-center justify-center border border-border overflow-hidden" style={{ minHeight: 380 }}>
+              <motion.img
+                key={activeImg}
+                initial={{ opacity: 0, scale: 0.96 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.35 }}
+                src={product.images[activeImg]}
+                alt={product.title}
+                className="max-w-full h-auto object-cover rounded-xl max-h-[420px] drop-shadow-2xl"
+              />
+            </div>
+            {/* Thumbnails — only shown when more than 1 image */}
+            {product.images.length > 1 && (
+              <div className="flex gap-3">
+                {product.images.map((img, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActiveImg(i)}
+                    className={`w-20 h-20 rounded-xl overflow-hidden border-2 transition-all duration-200 shrink-0 ${
+                      activeImg === i ? "border-primary shadow-md scale-105" : "border-border opacity-60 hover:opacity-100"
+                    }`}
+                  >
+                    <img src={img} alt={`${product.title} view ${i + 1}`} className="w-full h-full object-cover" />
+                  </button>
+                ))}
+              </div>
+            )}
           </motion.div>
 
           <motion.div 
