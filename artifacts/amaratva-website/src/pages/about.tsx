@@ -35,8 +35,18 @@ export default function About() {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div {...fadeInUp}>
-              <img src="/images/indoor-lab.png" alt="Amaratva Lab" className="rounded-2xl shadow-xl w-full" />
+            <motion.div {...fadeInUp} className="space-y-4">
+              <div className="overflow-hidden rounded-2xl shadow-xl">
+                <img src="/farm-lab-founders.jpg" alt="Naveen & Parveen — Amaratva Agro Founders" className="w-full object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="overflow-hidden rounded-xl shadow-md">
+                  <img src="/farm-lab-naveen.jpg" alt="Naveen in the indoor saffron lab" className="w-full h-44 object-cover hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="overflow-hidden rounded-xl shadow-md">
+                  <img src="/farm-lab-parveen.jpg" alt="Parveen in the indoor saffron lab" className="w-full h-44 object-cover hover:scale-105 transition-transform duration-700" />
+                </div>
+              </div>
             </motion.div>
             <motion.div {...fadeInUp} className="space-y-6">
               <h2 className="text-3xl font-serif font-bold text-foreground">Our Story</h2>
@@ -46,8 +56,24 @@ export default function About() {
               <p className="text-lg text-muted-foreground font-sans leading-relaxed">
                 By leveraging state-of-the-art indoor aeroponics, we have successfully decoupled saffron farming from its traditional geographical constraints. Based in Hisar, Haryana, our facility represents a leap forward in sustainable, high-yield luxury agriculture.
               </p>
+              <p className="text-lg text-muted-foreground font-sans leading-relaxed">
+                Founded by <strong className="text-foreground">Naveen</strong> and <strong className="text-foreground">Parveen</strong>, the company is driven by a passion for purity and a deep respect for traditional Indian botanical wisdom, reimagined for the modern consumer.
+              </p>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Founders with Products */}
+      <section className="py-16 bg-card">
+        <div className="container mx-auto px-4 md:px-6">
+          <motion.div {...fadeInUp} className="text-center mb-12">
+            <h2 className="text-4xl font-serif font-bold text-foreground mb-3">Meet the Founders</h2>
+            <p className="text-muted-foreground font-sans max-w-xl mx-auto">Two visionaries who brought indoor saffron farming to Haryana and built a premium wellness brand from scratch.</p>
+          </motion.div>
+          <motion.div {...fadeInUp} className="overflow-hidden rounded-3xl shadow-2xl max-w-4xl mx-auto">
+            <img src="/founders-with-products.jpg" alt="Amaratva Agro founders with complete product range" className="w-full object-cover" />
+          </motion.div>
         </div>
       </section>
 

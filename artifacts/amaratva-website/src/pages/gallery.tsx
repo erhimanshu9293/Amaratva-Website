@@ -3,17 +3,21 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Maximize2 } from "lucide-react";
 
 const galleryImages = [
-  { id: 1, src: "/images/saffron-field.png", category: "Products", title: "Golden Saffron Threads" },
-  { id: 2, src: "/images/indoor-lab.png", category: "Farming Lab", title: "Aeroponic Setup" },
-  { id: 3, src: "/images/saffron-water.png", category: "Products", title: "Saffron Water Bottle" },
-  { id: 4, src: "/images/saffron-tincture.png", category: "Products", title: "Tincture Extract" },
-  { id: 5, src: "/images/kesar-honey.png", category: "Products", title: "Kesar Honey Jar" },
-  { id: 6, src: "/images/nector-5.png", category: "Products", title: "Nector-5 Supplements" },
-  { id: 7, src: "/images/consultation.png", category: "Events", title: "Client Consultation" },
-  { id: 8, src: "/images/indoor-lab.png", category: "Infrastructure", title: "Lab Lighting Tech" },
+  { id: 1, src: "/farm-lab-founders.jpg", category: "Farming Lab", title: "Naveen & Parveen — Founders in the Saffron Lab" },
+  { id: 2, src: "/farm-lab-naveen.jpg", category: "Farming Lab", title: "Naveen with Freshly Harvested Saffron Flowers" },
+  { id: 3, src: "/farm-lab-parveen.jpg", category: "Farming Lab", title: "Parveen at the Indoor Aeroponic Facility" },
+  { id: 4, src: "/product-saffron-water-ad.jpg", category: "Products", title: "Saffron Water — Luxury Hydrating Mist" },
+  { id: 5, src: "/product-nector5-ad.jpg", category: "Products", title: "Nector-5 — Mix Herb Liquid Extract" },
+  { id: 6, src: "/product-kesar-water-ad.jpg", category: "Products", title: "Kesar Distilled Water — Pure as Nature" },
+  { id: 7, src: "/founders-with-products.jpg", category: "Events", title: "Founder Showcasing Full Amaratva Product Range" },
+  { id: 8, src: "/products-catalog.jpg", category: "Products", title: "Amaratva Agro — Premium Product Catalog" },
+  { id: 9, src: "/product-tincture-bottle.jpg", category: "Products", title: "Tincture of Saffron — 30ml Dropper" },
+  { id: 10, src: "/product-tincture-box.jpg", category: "Packaging", title: "Tincture of Saffron — Signature Orange Gift Box" },
+  { id: 11, src: "/product-kesar-honey.jpg", category: "Products", title: "Kesar + Honey — Glass Jar with Gift Box" },
+  { id: 12, src: "/product-nector5.jpg", category: "Packaging", title: "Nector-5 — Handcrafted Jute Gift Bag" },
 ];
 
-const categories = ["All", "Products", "Farming Lab", "Infrastructure", "Events"];
+const categories = ["All", "Products", "Farming Lab", "Packaging", "Events"];
 
 export default function Gallery() {
   const [activeTab, setActiveTab] = useState("All");

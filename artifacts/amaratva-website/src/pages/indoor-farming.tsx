@@ -18,11 +18,11 @@ export default function IndoorFarming() {
       <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-accent">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/indoor-lab.png" 
-            alt="Indoor Saffron Farming" 
-            className="w-full h-full object-cover opacity-30 mix-blend-overlay" 
+            src="/farm-lab-founders.jpg" 
+            alt="Amaratva Agro Indoor Saffron Farming Lab" 
+            className="w-full h-full object-cover opacity-40" 
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-accent via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-accent via-accent/60 to-accent/30"></div>
         </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
@@ -42,6 +42,26 @@ export default function IndoorFarming() {
               Discover how our advanced aeroponics technology enables us to grow the world's most precious spice indoors, free from geographical limitations and climate dependencies.
             </p>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Lab Photo Gallery Strip */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              { src: "/farm-lab-naveen.jpg", caption: "Naveen harvesting saffron flowers" },
+              { src: "/farm-lab-founders.jpg", caption: "Both founders inside the aeroponic facility" },
+              { src: "/farm-lab-parveen.jpg", caption: "Parveen monitoring saffron growth" },
+            ].map((photo, i) => (
+              <motion.div key={i} {...fadeInUp} transition={{ delay: i * 0.1 }} className="overflow-hidden rounded-2xl shadow-lg group">
+                <img src={photo.src} alt={photo.caption} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="bg-card border-t border-border px-4 py-3">
+                  <p className="font-sans text-sm text-muted-foreground">{photo.caption}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
