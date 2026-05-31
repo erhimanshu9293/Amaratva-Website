@@ -13,10 +13,10 @@ export default function Home() {
   };
 
   const products = [
-    { title: "Saffron Water", img: "/images/saffron-water.png", desc: "Pure infusion for daily wellness" },
-    { title: "Tincture of Saffron", img: "/images/saffron-tincture.png", desc: "Potent drops of health" },
-    { title: "Kesar + Honey", img: "/images/kesar-honey.png", desc: "Nature's golden synergy" },
-    { title: "Nector-5", img: "/images/nector-5.png", desc: "Premium wellness supplement" },
+    { title: "Saffron Water", slug: "saffron-water", img: "/images/saffron-water.png", desc: "Pure infusion for daily wellness" },
+    { title: "Tincture of Saffron", slug: "tincture-of-saffron", img: "/product-tincture-box.jpg", desc: "Potent drops of health" },
+    { title: "Kesar + Honey", slug: "kesar-honey", img: "/product-kesar-honey.jpg", desc: "Nature's golden synergy" },
+    { title: "Nector-5", slug: "nector-5", img: "/product-nector5.jpg", desc: "Premium wellness supplement" },
   ];
 
   return (
@@ -179,7 +179,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((product, i) => (
               <motion.div key={i} {...fadeInUp} transition={{ delay: i * 0.1 }}>
-                <Link href={`/products/${product.title.toLowerCase().replace(/ \+ | /g, '-')}`}>
+                <Link href={`/products/${product.slug}`}>
                   <Card className="overflow-hidden border border-border/50 group cursor-pointer hover:border-primary/50 transition-colors h-full flex flex-col">
                     <div className="relative overflow-hidden aspect-square bg-card">
                       <img 
