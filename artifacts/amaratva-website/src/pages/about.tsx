@@ -97,6 +97,41 @@ export default function About() {
         </div>
       </section>
 
+      {/* In the Media / Press */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 md:px-6">
+          <motion.div {...fadeInUp} className="text-center mb-12">
+            <h2 className="text-4xl font-serif font-bold text-foreground mb-3">In the News</h2>
+            <p className="text-muted-foreground font-sans max-w-2xl mx-auto">
+              Praveen and Naveen Sindhu have been recognized across national media, academic conferences, and government bodies for their pioneering work in indoor saffron farming.
+            </p>
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            <motion.div {...fadeInUp} className="overflow-hidden rounded-2xl shadow-xl group">
+              <img src="/founders-award-ceremony.jpg" alt="Founders receiving certificate at International Saffron Conference, Srinagar" className="w-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="p-4 bg-card border-t border-border">
+                <p className="font-serif font-semibold text-foreground text-sm">International Saffron Conference — Srinagar</p>
+                <p className="text-xs text-muted-foreground font-sans mt-1">Praveen & Naveen Sindhu honoured by NITI Aayog Chairman Prof. Ramesh Chand for innovation in saffron cultivation.</p>
+              </div>
+            </motion.div>
+            <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="overflow-hidden rounded-2xl shadow-xl group">
+              <img src="/press-coverage-1.jpg" alt="Newspaper coverage — Hisar Union" className="w-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="p-4 bg-card border-t border-border">
+                <p className="font-serif font-semibold text-foreground text-sm">Hisar Newspaper — Hisar Union</p>
+                <p className="text-xs text-muted-foreground font-sans mt-1">"Yuva Kisan Praveen v Naveen Sindhu Sammanit" — recognised for achieving ₹6–7 lakh revenue from indoor saffron farming in Azad Nagar, Hisar.</p>
+              </div>
+            </motion.div>
+            <motion.div {...fadeInUp} transition={{ delay: 0.2 }} className="overflow-hidden rounded-2xl shadow-xl group">
+              <img src="/press-coverage-2.jpg" alt="Newspaper coverage — full article" className="w-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="p-4 bg-card border-t border-border">
+                <p className="font-serif font-semibold text-foreground text-sm">Hisar News — Extended Feature</p>
+                <p className="text-xs text-muted-foreground font-sans mt-1">Featured in regional press for growing saffron in a single room and inspiring a new generation of indoor agri-entrepreneurs in Haryana.</p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Core Values */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4 text-center">

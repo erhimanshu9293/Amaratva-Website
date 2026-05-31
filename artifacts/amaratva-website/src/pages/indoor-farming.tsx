@@ -45,19 +45,45 @@ export default function IndoorFarming() {
         </div>
       </section>
 
+      {/* Bloom Showcase — Full-width hero image */}
+      <section className="bg-background">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="relative overflow-hidden"
+        >
+          <img
+            src="/saffron-flowers-rack.jpg"
+            alt="Saffron flowers in full bloom on indoor racks"
+            className="w-full max-h-[520px] object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent flex items-center">
+            <div className="container mx-auto px-4 md:px-6">
+              <div className="max-w-md text-white space-y-3">
+                <span className="inline-block py-1 px-3 rounded-full bg-primary/30 border border-primary/60 text-primary font-sans text-xs uppercase tracking-wider font-bold">Phase 4 — Blooming</span>
+                <h3 className="text-3xl md:text-4xl font-serif font-bold">Rows upon rows of blooming purple saffron — all indoors, all year round.</h3>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
       {/* Lab Photo Gallery Strip */}
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { src: "/farm-lab-naveen.jpg", caption: "Naveen harvesting saffron flowers" },
-              { src: "/farm-lab-founders.jpg", caption: "Both founders inside the aeroponic facility" },
-              { src: "/farm-lab-parveen.jpg", caption: "Parveen monitoring saffron growth" },
+              { src: "/founders-wooden-farm.jpg", caption: "Founders harvesting saffron in the wooden indoor facility" },
+              { src: "/saffron-harvest-indoor.jpg", caption: "Hand-picking bloomed saffron flowers" },
+              { src: "/saffron-corm-closeup.jpg", caption: "Crocus sativus corm — ready to bloom" },
+              { src: "/farm-lab-naveen.jpg", caption: "Naveen with freshly harvested flowers" },
             ].map((photo, i) => (
               <motion.div key={i} {...fadeInUp} transition={{ delay: i * 0.1 }} className="overflow-hidden rounded-2xl shadow-lg group">
-                <img src={photo.src} alt={photo.caption} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700" />
-                <div className="bg-card border-t border-border px-4 py-3">
-                  <p className="font-sans text-sm text-muted-foreground">{photo.caption}</p>
+                <img src={photo.src} alt={photo.caption} className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="bg-card border-t border-border px-3 py-2">
+                  <p className="font-sans text-xs text-muted-foreground leading-snug">{photo.caption}</p>
                 </div>
               </motion.div>
             ))}
