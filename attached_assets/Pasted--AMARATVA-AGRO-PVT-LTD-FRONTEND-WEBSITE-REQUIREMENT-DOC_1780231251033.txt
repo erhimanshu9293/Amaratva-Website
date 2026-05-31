@@ -1,0 +1,562 @@
+# AMARATVA AGRO PVT. LTD.
+
+# FRONTEND WEBSITE REQUIREMENT DOCUMENT
+
+## Project Type
+
+Corporate + Product Showcase Website
+
+## Objective
+
+Develop a premium, modern, luxury-looking responsive website for Amaratva Agro Pvt. Ltd. that showcases:
+
+* Indoor Saffron Farming Technology
+* Saffron-Based Premium Products
+* Company Profile
+* Product Gallery
+* Lead Generation (UI Only)
+* Brand Trust & Authority
+
+This project is frontend-only.
+
+---
+
+# Design Theme
+
+## Design Style
+
+Premium Luxury Brand
+
+Modern Minimal UI
+
+Clean Light Theme
+
+High-end Product Presentation
+
+Responsive Design
+
+Smooth Animations
+
+Professional Corporate Appearance
+
+---
+
+# Color Palette
+
+Primary Color
+Saffron Orange (#F49A2E)
+
+Secondary Color
+Luxury Gold (#C8A24A)
+
+Background
+White (#FFFFFF)
+
+Section Background
+Off White (#FAF8F3)
+
+Text Color
+Dark Charcoal (#222222)
+
+Accent Color
+Deep Brown (#5A3B1A)
+
+---
+
+# Typography
+
+Headings:
+Playfair Display
+
+Body:
+Poppins
+
+Buttons:
+Poppins SemiBold
+
+---
+
+# Website Pages
+
+## 1. HOME PAGE
+
+### Hero Section
+
+Full Width Premium Banner
+
+Left Side:
+
+Heading:
+India's Trusted Indoor Saffron Farming & Premium Wellness Brand
+
+Description:
+Experience purity, innovation, and premium quality through indoor saffron cultivation and handcrafted saffron products.
+
+Buttons:
+
+Explore Products
+
+Contact Us
+
+Right Side:
+
+Luxury product showcase
+
+Saffron Water
+
+Tincture of Saffron
+
+Kesar + Honey
+
+Nector-5
+
+Animation:
+Floating Product Cards
+
+Parallax Effect
+
+---
+
+### About Company Section
+
+Image + Content Layout
+
+Heading:
+About Amaratva Agro
+
+Description:
+Amaratva Agro Pvt. Ltd. specializes in indoor saffron farming, saffron processing, and premium saffron wellness products developed through advanced agricultural technologies.
+
+---
+
+### Why Choose Us
+
+6 Premium Cards
+
+Indoor Farming
+
+Lab Tested Quality
+
+Premium Packaging
+
+Research Driven
+
+Natural Ingredients
+
+Trusted Brand
+
+Hover Animation Required
+
+---
+
+### Product Categories
+
+Grid Layout
+
+Card Design:
+
+Product Image
+
+Product Name
+
+Short Description
+
+View Details Button
+
+Products:
+
+Saffron Water
+
+Tincture Of Saffron
+
+Kesar + Honey
+
+Nector-5
+
+Indoor Farming Solutions
+
+---
+
+### Indoor Farming Section
+
+Large Background Visual
+
+Headline:
+Grow Premium Saffron Beyond Kashmir
+
+Features:
+
+Controlled Environment
+
+Higher Yield
+
+Advanced Aeroponics
+
+Research Based Process
+
+CTA:
+Learn More
+
+---
+
+### Statistics Section
+
+Animated Counters
+
+1000+
+Customers
+
+500+
+Deliveries
+
+100+
+Consultations
+
+100%
+Quality Tested
+
+---
+
+### Testimonials
+
+Slider Layout
+
+Customer Cards
+
+5-Star Ratings
+
+---
+
+### Gallery Preview
+
+Masonry Layout
+
+Display product and farm images.
+
+Lightbox Gallery
+
+---
+
+### Contact CTA
+
+Large Premium Banner
+
+Headline:
+Let's Grow Purity Together
+
+Buttons:
+
+Call Now
+
+WhatsApp
+
+---
+
+# 2. ABOUT US PAGE
+
+Hero Banner
+
+Company Introduction
+
+Mission
+
+Vision
+
+Core Values
+
+Company Journey Timeline
+
+Image Gallery
+
+Call To Action
+
+---
+
+# 3. PRODUCTS PAGE
+
+Hero Banner
+
+Product Listing Grid
+
+Luxury Product Cards
+
+Filter Tabs:
+
+All
+
+Saffron Products
+
+Wellness Products
+
+Indoor Farming
+
+---
+
+# PRODUCT DETAILS PAGE
+
+Large Product Gallery
+
+Product Description
+
+Benefits
+
+Ingredients
+
+Usage Instructions
+
+Packaging Information
+
+Related Products
+
+Inquiry Form UI
+
+---
+
+# 4. INDOOR FARMING PAGE
+
+Hero Banner
+
+Technology Overview
+
+How Indoor Farming Works
+
+Benefits
+
+Farming Process Timeline
+
+Photo Gallery
+
+Consultation CTA
+
+---
+
+# 5. GALLERY PAGE
+
+Masonry Gallery
+
+Categories:
+
+Products
+
+Packaging
+
+Farming Lab
+
+Events
+
+Infrastructure
+
+Popup Lightbox
+
+---
+
+# 6. BLOG PAGE
+
+Blog Grid Layout
+
+Featured Article
+
+Latest Articles
+
+Search Design
+
+Categories
+
+Popular Posts Sidebar
+
+---
+
+# 7. CONTACT PAGE
+
+Contact Information Cards
+
+Naveen
++91 9671496386
+
+Parveen
++91 9468162388
+
+Lab Address:
+522 Krishna Nagar Railway Road,
+Camp Chowk,
+Near Lazeez Vatika,
+Hisar - 125001
+
+Registered Address:
+141, Professor Colony,
+Azad Nagar,
+Hisar,
+Haryana - 125001
+
+Google Map Section (UI Placeholder)
+
+Contact Form Design
+
+Name
+
+Phone
+
+Email
+
+Message
+
+---
+
+# HEADER DESIGN
+
+Transparent Header On Hero
+
+Sticky Navigation
+
+Logo Left
+
+Menu Right
+
+Home
+
+About
+
+Products
+
+Indoor Farming
+
+Gallery
+
+Blog
+
+Contact
+
+CTA Button:
+Call Now
+
+---
+
+# FOOTER DESIGN
+
+Company Logo
+
+Quick Links
+
+Products
+
+Contact Details
+
+Social Media Icons
+
+Copyright Section
+
+---
+
+# UI COMPONENTS
+
+Premium Buttons
+
+Hover Effects
+
+Animated Cards
+
+Counters
+
+Testimonials Slider
+
+Product Carousel
+
+Gallery Lightbox
+
+Scroll Animations
+
+Floating WhatsApp Button
+
+Back To Top Button
+
+---
+
+# RESPONSIVE DESIGN
+
+Desktop
+1920px
+
+Laptop
+1440px
+
+Tablet
+768px
+
+Mobile
+375px
+
+Fully Responsive Layout
+
+---
+
+# ANIMATIONS
+
+Framer Motion
+
+Fade In
+
+Slide Up
+
+Scale Hover
+
+Parallax Effects
+
+Smooth Page Transition
+
+Counter Animation
+
+Image Zoom Hover
+
+---
+
+# PERFORMANCE REQUIREMENTS
+
+Lighthouse Score Above 90
+
+Optimized Images
+
+Lazy Loading
+
+SEO Friendly Structure
+
+Fast Mobile Experience
+
+---
+
+# FRONTEND TECHNOLOGY
+
+Framework:
+Next.js 15
+
+Language:
+TypeScript
+
+Styling:
+Tailwind CSS
+
+Animation:
+Framer Motion
+
+Icons:
+Lucide React
+
+Carousel:
+Swiper.js
+
+Gallery:
+LightGallery
+
+---
+
+# WEBSITE FEEL
+
+The final website should feel like a combination of:
+
+Luxury Skincare Brand
+
+Premium Organic Product Company
+
+Modern Agricultural Technology Company
+
+The website should communicate:
+Purity, Trust, Innovation, Premium Quality, and Modern Farming Excellence.

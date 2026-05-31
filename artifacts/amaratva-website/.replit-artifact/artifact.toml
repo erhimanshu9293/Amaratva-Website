@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Amaratva Agro Website"
+version = "1.0.0"
+id = "artifacts/amaratva-website"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22110
+
+[services.development]
+run = "pnpm --filter @workspace/amaratva-website run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/amaratva-website", "run", "build" ]
+publicDir = "artifacts/amaratva-website/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22110"
+BASE_PATH = "/"

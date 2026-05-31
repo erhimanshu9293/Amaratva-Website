@@ -1,0 +1,44 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "fkq3vziy7begoN77wRuoY"
+uri = "file://artifacts/amaratva-website/public/images/saffron-field.png"
+type = "image"
+title = "golden saffron field threads close-up"
+
+[[generated]]
+id = "H4mIG7UC_LV5HqjiU-rg8"
+uri = "file://artifacts/amaratva-website/public/images/indoor-lab.png"
+type = "image"
+title = "indoor saffron farming lab"
+
+[[generated]]
+id = "dvwfFYHAU0b8NBz8Kyacp"
+uri = "file://artifacts/amaratva-website/public/images/saffron-water.png"
+type = "image"
+title = "Saffron Water product bottle"
+
+[[generated]]
+id = "RL-Op99jWwsYW2OI0BcDM"
+uri = "file://artifacts/amaratva-website/public/images/saffron-tincture.png"
+type = "image"
+title = "Tincture of Saffron product"
+
+[[generated]]
+id = "dD_ZsOBwWxwx9wRTODwEF"
+uri = "file://artifacts/amaratva-website/public/images/kesar-honey.png"
+type = "image"
+title = "Kesar Honey product jar"
+
+[[generated]]
+id = "V3pN-rFQdbm1_7aINtSEr"
+uri = "file://artifacts/amaratva-website/public/images/nector-5.png"
+type = "image"
+title = "Nector-5 wellness product"
+
+[[generated]]
+id = "D5Dk18Ns-wmc6BY04dwvN"
+uri = "file://artifacts/amaratva-website/public/images/consultation.png"
+type = "image"
+title = "warm farming consultation scene"
