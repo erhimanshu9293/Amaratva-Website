@@ -3,21 +3,38 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Maximize2 } from "lucide-react";
 
 const galleryImages = [
-  { id: 1, src: "/farm-lab-founders.jpg", category: "Farming Lab", title: "Naveen & Parveen — Founders in the Saffron Lab" },
-  { id: 2, src: "/farm-lab-naveen.jpg", category: "Farming Lab", title: "Naveen with Freshly Harvested Saffron Flowers" },
-  { id: 3, src: "/farm-lab-parveen.jpg", category: "Farming Lab", title: "Parveen at the Indoor Aeroponic Facility" },
-  { id: 4, src: "/product-saffron-water-ad.jpg", category: "Products", title: "Saffron Water — Luxury Hydrating Mist" },
-  { id: 5, src: "/product-nector5-ad.jpg", category: "Products", title: "Nector-5 — Mix Herb Liquid Extract" },
-  { id: 6, src: "/product-kesar-water-ad.jpg", category: "Products", title: "Kesar Distilled Water — Pure as Nature" },
-  { id: 7, src: "/founders-with-products.jpg", category: "Events", title: "Founder Showcasing Full Amaratva Product Range" },
-  { id: 8, src: "/products-catalog.jpg", category: "Products", title: "Amaratva Agro — Premium Product Catalog" },
-  { id: 9, src: "/product-tincture-bottle.jpg", category: "Products", title: "Tincture of Saffron — 30ml Dropper" },
-  { id: 10, src: "/product-tincture-box.jpg", category: "Packaging", title: "Tincture of Saffron — Signature Orange Gift Box" },
-  { id: 11, src: "/product-kesar-honey.jpg", category: "Products", title: "Kesar + Honey — Glass Jar with Gift Box" },
-  { id: 12, src: "/product-nector5.jpg", category: "Packaging", title: "Nector-5 — Handcrafted Jute Gift Bag" },
+  // Farming Lab - Indoor
+  { id: 1, src: "/saffron-flowers-rack.jpg", category: "Farming Lab", title: "Saffron Blooms in Full Glory — Indoor Rack Farming" },
+  { id: 2, src: "/farm-lab-founders.jpg", category: "Farming Lab", title: "Naveen & Parveen — Aeroponic Saffron Lab" },
+  { id: 3, src: "/founders-wooden-farm.jpg", category: "Farming Lab", title: "Founders Harvesting Saffron Flowers Indoors" },
+  { id: 4, src: "/saffron-harvest-indoor.jpg", category: "Farming Lab", title: "Hand-Picking Freshly Bloomed Saffron Flowers" },
+  { id: 5, src: "/farm-lab-naveen.jpg", category: "Farming Lab", title: "Naveen with Freshly Harvested Saffron" },
+  { id: 6, src: "/farm-lab-parveen.jpg", category: "Farming Lab", title: "Parveen at the Indoor Aeroponic Facility" },
+  { id: 7, src: "/naveen-with-flowers.jpg", category: "Farming Lab", title: "Saffron Corms in Full Bloom — Close View" },
+  { id: 8, src: "/naveen-with-corms.jpg", category: "Farming Lab", title: "Saffron Corms with Products at the Office" },
+  { id: 9, src: "/saffron-corm-closeup.jpg", category: "Farming Lab", title: "Crocus Sativus Corm — Ready to Bloom" },
+  // Field Visits
+  { id: 10, src: "/saffron-field-harvest.jpg", category: "Field Visits", title: "Hand-Picking Saffron Flowers from the Field" },
+  { id: 11, src: "/founders-outdoor-sourcing.jpg", category: "Field Visits", title: "Founders on a Saffron Sourcing Trip" },
+  { id: 12, src: "/founders-planting.jpg", category: "Field Visits", title: "Founders Planting Saffron Corms in the Ground" },
+  // Products
+  { id: 13, src: "/product-kesar-pure.jpg", category: "Products", title: "Pure Kesar — Premium 1g Amaratva Saffron" },
+  { id: 14, src: "/product-saffron-water-ad.jpg", category: "Products", title: "Saffron Water — Luxury Hydrating Mist" },
+  { id: 15, src: "/product-nector5-ad.jpg", category: "Products", title: "Nector-5 — Mix Herb Liquid Extract" },
+  { id: 16, src: "/product-kesar-water-ad.jpg", category: "Products", title: "Kesar Distilled Water — Pure as Nature" },
+  { id: 17, src: "/products-catalog.jpg", category: "Products", title: "Amaratva Agro — Premium Product Catalog" },
+  { id: 18, src: "/product-tincture-bottle.jpg", category: "Products", title: "Tincture of Saffron — 30ml Dropper" },
+  { id: 19, src: "/product-tincture-box.jpg", category: "Products", title: "Tincture of Saffron — Signature Gift Box" },
+  { id: 20, src: "/product-kesar-honey.jpg", category: "Products", title: "Kesar + Honey — Glass Jar with Gift Box" },
+  { id: 21, src: "/product-nector5.jpg", category: "Products", title: "Nector-5 — Handcrafted Jute Gift Bag" },
+  // Awards & Press
+  { id: 22, src: "/founders-award-ceremony.jpg", category: "Awards & Press", title: "Founders Receiving Certificate at International Saffron Conference, Srinagar" },
+  { id: 23, src: "/founders-with-products.jpg", category: "Awards & Press", title: "Founder Showcasing Full Amaratva Product Range" },
+  { id: 24, src: "/press-coverage-1.jpg", category: "Awards & Press", title: "Hisar Newspaper — Praveen & Naveen Sindhu Honoured" },
+  { id: 25, src: "/press-coverage-2.jpg", category: "Awards & Press", title: "Hisar Union — Yuva Kisan Sammanit" },
 ];
 
-const categories = ["All", "Products", "Farming Lab", "Packaging", "Events"];
+const categories = ["All", "Farming Lab", "Field Visits", "Products", "Awards & Press"];
 
 export default function Gallery() {
   const [activeTab, setActiveTab] = useState("All");
