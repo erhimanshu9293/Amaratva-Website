@@ -11,8 +11,8 @@ import { Link } from "wouter";
 const productsData = {
   "saffron-water": {
     title: "Saffron Water",
-    subtitle: "Pure Hydration with Golden Essence",
-    images: ["/images/saffron-water.png"],
+    subtitle: "Luxury Hydrating Mist — 100ml",
+    images: ["/product-saffron-water-ad.jpg", "/product-kesar-water-ad.jpg"],
     price: "₹899",
     size: "500ml",
     desc: "Experience the delicate aroma and health benefits of pure indoor-farmed saffron infused in pristine mineral water. Refreshing, hydrating, and naturally rich in antioxidants.",
@@ -64,7 +64,7 @@ const productsData = {
   "nector-5": {
     title: "Nector-5",
     subtitle: "A Mix Herb Liquid Extract — 10ml",
-    images: ["/product-nector5.jpg"],
+    images: ["/product-nector5-ad.jpg", "/product-nector5.jpg"],
     price: "₹1,999",
     size: "10ml",
     desc: "A powerful proprietary Mix Herb Liquid Extract — a blend of five potent natural adaptogens and botanicals. Presented in a premium 10ml dropper bottle with a signature handcrafted jute gift bag. Formulated to support holistic vitality, stamina, immunity, and mental performance.",

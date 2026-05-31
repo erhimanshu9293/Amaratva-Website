@@ -13,10 +13,10 @@ export default function Home() {
   };
 
   const products = [
-    { title: "Saffron Water", slug: "saffron-water", img: "/images/saffron-water.png", desc: "Pure infusion for daily wellness" },
-    { title: "Tincture of Saffron", slug: "tincture-of-saffron", img: "/product-tincture-box.jpg", desc: "Potent drops of health" },
-    { title: "Kesar + Honey", slug: "kesar-honey", img: "/product-kesar-honey.jpg", desc: "Nature's golden synergy" },
-    { title: "Nector-5", slug: "nector-5", img: "/product-nector5.jpg", desc: "Premium wellness supplement" },
+    { title: "Saffron Water", slug: "saffron-water", img: "/product-saffron-water-ad.jpg", desc: "Luxury hydrating mist enriched with pure Kashmir saffron" },
+    { title: "Tincture of Saffron", slug: "tincture-of-saffron", img: "/product-tincture-box.jpg", desc: "Potent 30ml liquid saffron extract in a signature gift box" },
+    { title: "Kesar + Honey", slug: "kesar-honey", img: "/product-kesar-honey.jpg", desc: "Pure kesar infused with natural honey — 30g of golden synergy" },
+    { title: "Nector-5", slug: "nector-5", img: "/product-nector5-ad.jpg", desc: "Mix herb liquid extract for immunity, stamina & vitality" },
   ];
 
   return (
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeInUp} className="relative">
               <div className="absolute -inset-4 bg-secondary/10 rounded-3xl transform -rotate-3 z-0"></div>
-              <img src="/images/indoor-lab.png" alt="Indoor Saffron Lab" className="relative z-10 rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" />
+              <img src="/farm-lab-founders.jpg" alt="Naveen & Parveen — Amaratva Agro Founders in the Saffron Lab" className="relative z-10 rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" />
               <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl z-20 hidden md:block">
                 <div className="font-serif text-5xl text-primary font-bold mb-1">100%</div>
                 <div className="font-sans text-sm text-muted-foreground uppercase tracking-wider font-semibold">Pure & Tested</div>
